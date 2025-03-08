@@ -1,0 +1,151 @@
+.container-predict {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.container-predict h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container-predict .button {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+.container-predict .button button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+
+.container-predict .button button:hover{
+    color: #ffffff;
+    background-color: yellowgreen;
+    transition: 0.5s ease;
+
+}
+
+
+.container-predict .heart-disease-form{
+    display: flex;
+    flex-direction: column;
+}
+
+.container-predict .rowone{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+ }
+ 
+ .container-predict .rowtwo{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+ } 
+
+ .container-predict .rowthree{
+    display: flex;
+    width: auto;
+ } 
+
+ .container-predict .rowthree .form-group{
+    margin-right: 130px;
+ }
+
+ 
+ .container-predict label{
+    width: 350px;
+ }
+
+ .container-predict input{
+    width: 350px;
+    height: 50px;
+    border-radius: 5px;
+    border: 2px solid yellowgreen;
+
+ }
+
+ .container-predict .form-group{
+    display: flex;
+    flex-direction: column;
+ }
+
+ .container-predict .result-box{
+    height: auto;
+    width: auto;
+    padding: 30px 10px;
+    display: flex;
+    justify-content: center;
+
+ }
+
+ .container-predict .r-box{
+    height: 60px;
+    width: 75%;
+    background-color: aliceblue;
+    text-align: start;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid #000;
+
+
+ }
+
+
+ @media (max-width: 1024px) {
+   .container-predict .rowone, .container-predict .rowtwo, .container-predict .rowthree {
+       flex-direction: column;
+   }
+
+   .container-predict label, .container-predict input {
+       width: 100%;
+   }
+
+   .container-predict .rowthree .form-group {
+       margin-right: 0;
+   }
+
+   .container-predict .r-box {
+       width: 100%;
+   }
+}
+
+@media (max-width: 768px) {
+   .container-predict {
+       padding: 15px;
+   }
+
+   .container-predict .button button {
+       padding: 8px 16px;
+       font-size: 14px;
+   }
+
+   .container-predict input {
+       height: 45px;
+   }
+}
+
+@media (max-width: 480px) {
+   .container-predict {
+       padding: 10px;
+   }
+
+   .container-predict .button button {
+       padding: 6px 12px;
+       font-size: 12px;
+   }
+
+   .container-predict input {
+       height: 40px;
+   }
+}
+

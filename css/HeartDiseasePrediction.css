@@ -1,0 +1,187 @@
+.container-predict {
+   background-color: white;
+   padding: 20px;
+   border-radius: 8px;
+   margin-top: 20px;
+   margin-bottom: 30px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.container-predict h1 {
+   text-align: center;
+   margin-bottom: 20px;
+}
+       
+.container-predict .button {
+   display: flex;
+   justify-content: center;
+}
+.container-predict .button button {
+   padding: 10px 20px;
+   font-size: 16px;
+   cursor: pointer;
+   background-color: #007bff;
+   color: white;
+   border: none;
+   border-radius: 5px;
+}
+
+.container-predict .button button:hover{
+   color: #ffffff;
+   background-color: yellowgreen;
+   transition: 0.5s ease;
+
+}
+       
+
+.container-predict .heart-disease-form{
+   display: flex;
+   flex-direction: column;
+}
+
+.container-predict .rowone{
+   display: flex;
+   width: 100%;
+   justify-content: space-between;
+}
+         
+.container-predict .rowtwo{
+   display: flex;
+   width: 100%;
+   justify-content: space-between;
+} 
+
+.container-predict .rowthree{
+   display: flex;
+   width: 100%;
+   justify-content: space-between;
+} 
+
+.container-predict .rowfour{
+   display: flex;
+   width: 100%;
+   justify-content: space-between;
+ } 
+
+.container-predict .rowfive{
+   display: flex;
+   width: 100%;
+   justify-content: space-between;
+}
+         
+.container-predict label{
+   width: 350px;
+}
+
+.container-predict input{
+   width: 350px;
+   height: 50px;
+   border-radius: 5px;
+   border: 2px solid yellowgreen;
+
+}
+        
+.container-predict .form-group{
+   display: flex;
+   flex-direction: column;
+}
+
+.container-predict .result-box{
+   height: auto;
+   width: auto;
+   padding: 30px 10px;
+   display: flex;
+   justify-content: center;
+
+}
+
+.container-predict .r-box{
+   height: 60px;
+   width: 75%;
+   background-color: aliceblue;
+   text-align: start;
+   padding: 10px 20px;
+   border-radius: 10px;
+   border: 1px solid #000;
+
+}
+
+
+
+/* Media Queries for Mobile */
+@media (max-width: 768px) {
+   .container-predict {
+       padding: 10px;
+       margin-top: 10px;
+       margin-bottom: 20px;
+   }
+
+   .container-predict h1 {
+       font-size: 24px; /* Adjusted font size for smaller screens */
+       margin-bottom: 15px;
+   }
+
+   .container-predict .button button {
+       padding: 8px 16px;
+       font-size: 14px;
+   }
+
+   .container-predict .rowone,
+   .container-predict .rowtwo,
+   .container-predict .rowthree,
+   .container-predict .rowfour,
+   .container-predict .rowfive {
+       flex-direction: column; /* Stack items vertically */
+   }
+
+   .container-predict label,
+   .container-predict input,
+   .container-predict .r-box {
+       width: 100%; /* Full width for inputs and result box */
+   }
+
+   .container-predict input {
+       height: 40px; /* Adjusted input height for smaller screens */
+   }
+}
+
+/* Media Queries for Tablets */
+@media (min-width: 820px) and (max-width: 1180px) {
+   .container-predict {
+       padding: 15px;
+       margin-top: 15px;
+       margin-bottom: 25px;
+   }
+
+   .container-predict h1 {
+       font-size: 28px; /* Adjusted font size for tablets */
+       margin-bottom: 18px;
+   }
+
+   .container-predict .button button {
+       padding: 9px 18px;
+       font-size: 15px;
+   }
+
+   .container-predict .rowone,
+   .container-predict .rowtwo,
+   .container-predict .rowthree,
+   .container-predict .rowfour,
+   .container-predict .rowfive {
+       flex-direction: row; /* Stack items horizontally */
+       display: flex;
+   }
+
+   .container-predict label,
+   .container-predict input,
+   .container-predict .r-box {
+       width: 100%; /* Adjusted width for better layout on tablets */
+   }
+
+   .container-predict input {
+       height: 45px; /* Adjusted input height for tablets */
+   }
+
+   .container-predict .form-group {
+      width: 30%;
+   }
+}
